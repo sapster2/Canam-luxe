@@ -3,351 +3,240 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CanAm Luxe provides premium furniture rental solutions for U.S. government employees assigned to Canada." />
   <title>CanAm Luxe | Furniture Rental for Canada Assignments</title>
-
-  <style>
-    * { box-sizing: border-box; scroll-behavior: smooth; }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #1f2933;
-      background: #faf8f4;
-    }
-
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: white;
-      padding: 18px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 12px rgba(0,0,0,.08);
-    }
-
-    nav h2 { margin: 0; }
-
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #1f2933;
-      font-weight: bold;
-    }
-
-    .hero {
-      min-height: 90vh;
-      background-image: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
-        url("images/hero.png");
-      background-size: cover;
-      background-position: center;
-      color: white;
-      padding: 140px 8%;
-      display: flex;
-      align-items: center;
-    }
-
-    .hero-content { max-width: 760px; }
-
-    h1 {
-      font-size: clamp(42px, 7vw, 78px);
-      margin: 0 0 20px;
-      line-height: 1.05;
-    }
-
-    .hero p {
-      font-size: 22px;
-      line-height: 1.5;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #c8a97e;
-      color: white;
-      padding: 15px 26px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      border: none;
-      cursor: pointer;
-      font-size: 16px;
-    }
-
-    section { padding: 80px 8%; }
-
-    .section-title {
-      text-align: center;
-      font-size: 38px;
-      margin-bottom: 18px;
-    }
-
-    .section-subtitle {
-      text-align: center;
-      max-width: 780px;
-      margin: 0 auto 45px;
-      font-size: 18px;
-      line-height: 1.6;
-      color: #52616b;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 28px;
-    }
-
-    .card {
-      background: white;
-      padding: 32px;
-      border-radius: 14px;
-      box-shadow: 0 8px 24px rgba(0,0,0,.08);
-    }
-
-    .card h3 { margin-top: 0; }
-
-    .highlight {
-      background: #1f2933;
-      color: white;
-    }
-
-    .highlight .section-subtitle { color: #d8dee4; }
-
-    .packages {
-      background: #f1ece3;
-    }
-
-    form {
-      max-width: 900px;
-      margin: auto;
-      background: white;
-      padding: 35px;
-      border-radius: 14px;
-      box-shadow: 0 8px 24px rgba(0,0,0,.1);
-    }
-
-    label {
-      display: block;
-      margin-top: 18px;
-      font-weight: bold;
-    }
-
-    input, select, textarea {
-      width: 100%;
-      padding: 13px;
-      margin-top: 7px;
-      border: 1px solid #ccd3d9;
-      border-radius: 6px;
-      font-size: 16px;
-    }
-
-    textarea { min-height: 120px; }
-
-    .note {
-      font-size: 14px;
-      color: #52616b;
-      margin-top: 15px;
-    }
-
-    footer {
-      background: #111827;
-      color: white;
-      text-align: center;
-      padding: 35px;
-    }
-
-    @media (max-width: 700px) {
-      nav {
-        flex-direction: column;
-        gap: 12px;
-      }
-
-      nav a { margin: 0 8px; }
-
-      .hero { padding: 100px 6%; }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
 
-<nav>
-  <h2>CanAm Luxe</h2>
-  <div>
+<header class="site-header">
+  <a href="#" class="brand">
+    <img src="images/logo.svg" alt="CanAm Luxe logo" />
+  </a>
+
+  <nav class="nav-links">
     <a href="#how">How It Works</a>
     <a href="#packages">Packages</a>
-    <a href="#quote">Request Quote</a>
-  </div>
-</nav>
+    <a href="#why">Why CanAm Luxe</a>
+    <a href="#quote" class="nav-cta">Request Pricing</a>
+  </nav>
+</header>
 
 <section class="hero">
-  <div class="hero-content">
+  <div class="hero-overlay"></div>
+  <div class="hero-content fade-in">
+    <p class="eyebrow">Premium furniture rental for Canada assignments</p>
     <h1>Your Home in Canada, Furnished Your Way</h1>
-    <p>
-      Premium furniture rental solutions for U.S. government employees assigned to Canada.
-      Choose the furniture you want — we help make your temporary residence feel like home.
+    <p class="hero-text">
+      Designed for U.S. government employees and families assigned to Canada.
+      Choose the furniture you want — CanAm Luxe helps make your temporary residence feel like home.
     </p>
     <a href="#quote" class="btn">Request Rental Pricing</a>
   </div>
 </section>
 
-<section>
-  <h2 class="section-title">A Smarter Way to Furnish Your Assignment</h2>
-  <p class="section-subtitle">
-    CanAm Luxe was created for government families and professionals who need a comfortable,
-    move-in-ready home without buying, moving, storing, or reselling furniture.
-  </p>
-
-  <div class="grid">
-    <div class="card">
-      <h3>Choose From Your Favorite Stores</h3>
-      <p>Select furniture from most major retailers and send us the links, SKUs, and store details.</p>
-    </div>
-
-    <div class="card">
-      <h3>Built for 1–2 Year Assignments</h3>
-      <p>Our rental model is designed around temporary duty, relocation, and extended Canada assignments.</p>
-    </div>
-
-    <div class="card">
-      <h3>Credit Card Friendly</h3>
-      <p>We are building convenient payment options to support simple monthly rental billing.</p>
-    </div>
+<section class="quick-features">
+  <div>
+    <span>01</span>
+    <h3>Choose From Your Favorite Stores</h3>
+    <p>Select furniture from most major retailers and send us the links, SKUs, and store details.</p>
+  </div>
+  <div>
+    <span>02</span>
+    <h3>Flexible Rental Terms</h3>
+    <p>Designed for 1–2 year assignments, temporary postings, and relocation needs.</p>
+  </div>
+  <div>
+    <span>03</span>
+    <h3>Credit Card Friendly</h3>
+    <p>Convenient payment options planned for simple monthly rental billing.</p>
   </div>
 </section>
 
-<section id="how" class="highlight">
-  <h2 class="section-title">How It Works</h2>
-  <p class="section-subtitle">
-    You choose the look. We review the items and provide a rental quote tailored to your term.
-  </p>
+<section class="intro section-pad">
+  <div class="intro-text fade-in">
+    <p class="eyebrow dark">Assignment-focused furnishing</p>
+    <h2>A smarter way to furnish your Canada assignment.</h2>
+    <p>
+      CanAm Luxe was created for government families and professionals who need a comfortable,
+      move-in-ready home without buying, moving, storing, or reselling furniture at the end of an assignment.
+    </p>
+    <p>
+      Rather than forcing you into a limited inventory catalog, we let you identify the furniture you actually want.
+      Send us your preferred pieces, and we will review the request and provide rental pricing based on your needs.
+    </p>
+  </div>
 
-  <div class="grid">
-    <div class="card">
-      <h3>1. Send Your Furniture List</h3>
+  <div class="intro-image fade-in">
+    <img src="images/vancouver-night.jpg" alt="Vancouver skyline at night" />
+  </div>
+</section>
+
+<section id="how" class="how section-pad">
+  <p class="eyebrow">Simple process</p>
+  <h2>How It Works</h2>
+
+  <div class="steps">
+    <div class="step fade-in">
+      <span>1</span>
+      <h3>Send Your Furniture List</h3>
       <p>Provide store names, SKUs, and product links for the items you want in your home.</p>
     </div>
 
-    <div class="card">
-      <h3>2. Receive Rental Pricing</h3>
-      <p>We review your request and provide rental pricing based on your furniture selections and rental term.</p>
+    <div class="step fade-in">
+      <span>2</span>
+      <h3>Receive Rental Pricing</h3>
+      <p>We review your requested items and provide rental pricing based on your term.</p>
     </div>
 
-    <div class="card">
-      <h3>3. Settle In Comfortably</h3>
+    <div class="step fade-in">
+      <span>3</span>
+      <h3>Settle In Comfortably</h3>
       <p>Enjoy a professionally planned furnishing solution without the burden of ownership.</p>
     </div>
   </div>
 </section>
 
-<section id="packages" class="packages">
-  <h2 class="section-title">Move-In Ready Support</h2>
-  <p class="section-subtitle">
-    Whether you need a few essential pieces or a fully furnished home, CanAm Luxe is designed to support your assignment lifestyle.
-  </p>
-
-  <div class="grid">
-    <div class="card">
-      <h3>Essential Living</h3>
-      <p>Core living room, dining, and bedroom pieces for a comfortable temporary home.</p>
-    </div>
-
-    <div class="card">
-      <h3>Family Comfort</h3>
-      <p>Furniture support for families relocating with children during extended assignments.</p>
-    </div>
-
-    <div class="card">
-      <h3>Custom Selection</h3>
-      <p>Send us your preferred items from retailers you trust, and we will review your requested setup.</p>
-    </div>
+<section id="why" class="why section-pad">
+  <div class="section-heading">
+    <p class="eyebrow">Why CanAm Luxe</p>
+    <h2>Built around the realities of temporary living abroad.</h2>
   </div>
-</section>
 
-<section>
-  <h2 class="section-title">Why CanAm Luxe</h2>
-  <p class="section-subtitle">
-    We understand the unique needs of U.S. government employees living abroad and the importance of making a temporary post feel stable, comfortable, and professional.
-  </p>
+  <div class="why-grid">
+    <div class="why-card fade-in">
+      <h3>Assignment Focused</h3>
+      <p>Our service is built around the realities of government relocation, temporary living, and cross-border assignments.</p>
+    </div>
 
-  <div class="grid">
-    <div class="card">
+    <div class="why-card fade-in">
       <h3>No Inventory Limits</h3>
-      <p>You are not limited to a small furniture catalog. You tell us what you want.</p>
+      <p>You are not limited to a small furniture catalog. You tell us what you want and we review the request.</p>
     </div>
 
-    <div class="card">
-      <h3>Assignment-Focused</h3>
-      <p>Our service is built around the realities of government relocation and temporary living.</p>
-    </div>
-
-    <div class="card">
+    <div class="why-card fade-in">
       <h3>Simplified Process</h3>
       <p>Submit your request once and receive guidance on next steps without shopping blindly.</p>
     </div>
   </div>
 </section>
 
-<section id="quote">
-  <h2 class="section-title">Request Rental Pricing</h2>
-  <p class="section-subtitle">
-    Complete the form below. Your request will be emailed directly to CanAm Luxe for review.
-  </p>
+<section id="packages" class="packages section-pad">
+  <div class="section-heading">
+    <p class="eyebrow dark">Move-in ready support</p>
+    <h2>Furniture support for the way your family actually lives.</h2>
+    <p>Whether you need a few essential pieces or a fully furnished home, CanAm Luxe is designed to support your assignment lifestyle.</p>
+  </div>
 
-  <form action="https://formsubmit.co/carlo.cortina@gmail.com" method="POST">
+  <div class="package-grid">
+    <article class="package-card fade-in">
+      <img src="images/living-room.jpg" alt="Luxury furnished living room" />
+      <h3>Essential Living</h3>
+      <p>Core living room, dining, and bedroom pieces for a comfortable temporary home.</p>
+    </article>
+
+    <article class="package-card fade-in">
+      <img src="images/bedroom.jpg" alt="Premium bedroom furniture" />
+      <h3>Family Comfort</h3>
+      <p>Furniture support for families relocating with children during extended assignments.</p>
+    </article>
+
+    <article class="package-card fade-in">
+      <img src="images/dining-room.jpg" alt="Elegant dining room furniture" />
+      <h3>Custom Selection</h3>
+      <p>Send us your preferred items from retailers you trust, and we will review your requested setup.</p>
+    </article>
+  </div>
+</section>
+
+<section class="skyline-callout">
+  <div>
+    <h2>Focus on your assignment. We’ll help make it feel like home.</h2>
+    <a href="#quote" class="btn">Start Your Request</a>
+  </div>
+</section>
+
+<section id="quote" class="quote-section section-pad">
+  <div class="quote-copy">
+    <p class="eyebrow">Rental pricing request</p>
+    <h2>Tell us what furniture you want and when you need it.</h2>
+    <p>
+      Complete the form below. Your request will be emailed directly to CanAm Luxe for review.
+    </p>
+  </div>
+
+  <form class="quote-form" action="https://formsubmit.co/carlo.cortina@gmail.com" method="POST">
     <input type="hidden" name="_subject" value="New CanAm Luxe Rental Request">
     <input type="hidden" name="_template" value="table">
     <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://canamluxe.com/thankyou.html">
 
-    <label>Name</label>
-    <input type="text" name="Name" required>
+    <div class="form-row">
+      <label>Name
+        <input type="text" name="Name" required>
+      </label>
 
-    <label>Email</label>
-    <input type="email" name="Email" required>
+      <label>Email
+        <input type="email" name="Email" required>
+      </label>
+    </div>
 
-    <label>Phone</label>
-    <input type="tel" name="Phone">
+    <div class="form-row">
+      <label>Phone
+        <input type="tel" name="Phone">
+      </label>
 
-    <label>Agency You Work For</label>
-    <input type="text" name="Agency" required>
+      <label>Agency You Work For
+        <input type="text" name="Agency" required>
+      </label>
+    </div>
 
-    <label>Anticipated Furniture Delivery Date</label>
-    <input type="date" name="Requested Delivery Date" required>
+    <div class="form-row">
+      <label>Anticipated Furniture Delivery Date
+        <input type="date" name="Requested Delivery Date" required>
+      </label>
 
-    <label>Rental Term</label>
-    <select name="Rental Term" required>
-      <option value="">Select one</option>
-      <option value="1 Year">1 Year</option>
-      <option value="18 Months">18 Months</option>
-      <option value="2 Years">2 Years</option>
-      <option value="Other">Other</option>
-    </select>
+      <label>Rental Term
+        <select name="Rental Term" required>
+          <option value="">Select one</option>
+          <option value="1 Year">1 Year</option>
+          <option value="18 Months">18 Months</option>
+          <option value="2 Years">2 Years</option>
+          <option value="Other">Other</option>
+        </select>
+      </label>
+    </div>
 
-    <label>Furniture Store Name(s)</label>
-    <input type="text" name="Furniture Store Names" placeholder="Example: West Elm, Crate & Barrel, IKEA">
+    <label>Furniture Store Name(s)
+      <input type="text" name="Furniture Store Names" placeholder="Example: West Elm, Crate & Barrel, IKEA">
+    </label>
 
-    <label>Furniture SKUs</label>
-    <textarea name="Furniture SKUs" placeholder="Paste item SKUs here"></textarea>
+    <label>Furniture SKUs
+      <textarea name="Furniture SKUs" placeholder="Paste item SKUs here"></textarea>
+    </label>
 
-    <label>Furniture Product Links</label>
-    <textarea name="Furniture Product Links" placeholder="Paste product links here"></textarea>
+    <label>Furniture Product Links
+      <textarea name="Furniture Product Links" placeholder="Paste product links here"></textarea>
+    </label>
 
-    <label>Additional Notes</label>
-    <textarea name="Additional Notes" placeholder="Tell us anything else we should know"></textarea>
+    <label>Additional Notes
+      <textarea name="Additional Notes" placeholder="Tell us anything else we should know"></textarea>
+    </label>
 
-    <br><br>
-    <button class="btn" type="submit">Submit Rental Request</button>
+    <button class="btn form-btn" type="submit">Submit Rental Request</button>
 
-    <p class="note">
-      After submitting, you may receive a quick email verification from FormSubmit the first time only.
+    <p class="form-note">
+      Your information will only be used to respond to your rental pricing request.
+      FormSubmit may ask you to confirm your email the first time the form is used.
     </p>
   </form>
 </section>
 
 <footer>
+  <img src="images/logo.svg" alt="CanAm Luxe logo" />
   <p>© 2026 CanAm Luxe. Premium furniture rental for Canada assignments.</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
